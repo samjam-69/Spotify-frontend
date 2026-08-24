@@ -1,0 +1,123 @@
+.song-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 12px 16px;
+
+  background: #ffffff;
+  border-radius: 16px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+
+  cursor: pointer;
+}
+
+/* Hover */
+.song-card:hover {
+  transform: translateY(-2px);
+
+  background: linear-gradient(
+    135deg,
+    #f8f9ff,
+    #ffffff
+  );
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+/* Click */
+.song-card:active {
+  transform: scale(0.98);
+}
+
+/* Song icon */
+.song-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #6f42c1,
+    #0d6efd
+  );
+
+  color: white;
+
+  font-size: 22px;
+
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.25);
+}
+
+/* Information */
+.song-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.song-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #212529;
+}
+
+.song-artist {
+  margin-top: 3px;
+
+  font-size: 13px;
+  color: #6c757d;
+}
+
+/* Duration */
+.song-duration {
+  font-size: 12px;
+  color: #6c757d;
+
+  background: #f1f3f5;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  flex-shrink: 0;
+}
+
+/* Play icon */
+.play-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #212529;
+  color: white;
+
+  font-size: 12px;
+
+  transition: all 0.2s ease;
+}
+
+.song-card:hover .play-icon {
+  background: #0d6efd;
+
+  transform: scale(1.1);
+}

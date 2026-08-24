@@ -1,0 +1,62 @@
+<div class="music-player">
+
+  <!-- Song info -->
+  <div class="song-info">
+    <div class="song-cover">🎵</div>
+
+    <div>
+      <div class="song-title">
+        {{ song.title || 'No song selected' }}
+      </div>
+
+      <div class="song-artist">
+        {{ song.artist || 'Select a song' }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+
+    <button class="control-btn">
+      ⏮
+    </button>
+
+    <button class="play-btn">
+      ▶
+    </button>
+
+    <button class="control-btn">
+      ⏭
+    </button>
+
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-section">
+
+    <span>0:00</span>
+
+    <input
+      type="range"
+      min="0"
+      value="0"
+      class="progress"
+    >
+
+    <span>3:42</span>
+
+  </div>
+
+  <!-- Volume -->
+  <div class="volume">
+    🔊
+    <input
+      type="range"
+      min="0"
+      max="100"
+      value="100"
+    >
+  </div>
+
+</div>

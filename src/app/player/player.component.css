@@ -1,0 +1,17 @@
+.audio-wrapper {
+  background: #212529;
+}
+
+audio {
+  height: 40px;
+}
+
+/* Chrome / Edge */
+audio::-webkit-media-controls-panel {
+  background-color: #212529;
+}
+
+/* Make the player fit nicely */
+audio::-webkit-media-controls-enclosure {
+  border-radius: 30px;
+}
